@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Filton's Guestbook | Knjiga gostov </title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+    {% for vnos in vnosi %}
+        <p>{{ vnos.name }} - <a href="/message/{{ vnos.key.id()}}">Pokaži</a></p>
+    {% endfor %}
+    <a href="/">Domov</a>
+</body>
+</html>

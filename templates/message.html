@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Filton's Guestbook | {{ vnos.name }} {{ vnos.date }}</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+    <h1> {{ vnos.name }} </h1>
+    <h2> {{ vnos.mail }} </h2>
+    <p><strong> {{ vnos.date }} </strong></p>
+
+    <p> {{ vnos.content }} </p>
+
+    <a href="/messages">Pokaži knjigo gostov</a>
+</body>
+</html>
